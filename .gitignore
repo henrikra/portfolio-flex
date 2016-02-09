@@ -4,3 +4,5 @@ dist
 bower_components
 node_modules
 npm-debug.log
+
+assets/styles/main.sass

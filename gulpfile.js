@@ -17,8 +17,10 @@ var plumber      = require('gulp-plumber');
 var rev          = require('gulp-rev');
 var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
+var sassGlob     = require('gulp-sass-glob');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var rename       = require("gulp-rename");
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -89,7 +91,7 @@ var cssTasks = function(filename) {
       return gulpif('*.less', less());
     })
     .pipe(function() {
-      return gulpif('*.scss', sass({
+      return gulpif('*.sass', sass({
         outputStyle: 'nested', // libsass doesn't support expanded yet
         precision: 10,
         includePaths: ['.'],
@@ -252,7 +254,7 @@ gulp.task('watch', function() {
       blacklist: ['/wp-admin/**']
     }
   });
-  gulp.watch([path.source + 'styles/**/*'], ['styles']);
+  gulp.watch([path.source + 'styles/**/*'], ['sass-glob', 'styles']);
   gulp.watch([path.source + 'scripts/**/*'], ['jshint', 'scripts']);
   gulp.watch([path.source + 'fonts/**/*'], ['fonts']);
   gulp.watch([path.source + 'images/**/*'], ['images']);
@@ -263,7 +265,8 @@ gulp.task('watch', function() {
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
 // Generally you should be running `gulp` instead of `gulp build`.
 gulp.task('build', function(callback) {
-  runSequence('styles',
+  runSequence('sass-glob',
+              'styles',
               'scripts',
               ['fonts', 'images'],
               callback);
@@ -286,4 +289,12 @@ gulp.task('wiredep', function() {
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
+});
+
+gulp.task('sass-glob', function () {
+  return gulp
+    .src(path.source + 'styles/all.sass')
+    .pipe(sassGlob())
+    .pipe(rename('main.sass'))
+    .pipe(gulp.dest(path.source + 'styles'));
 });
