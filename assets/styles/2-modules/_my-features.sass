@@ -1,0 +1,20 @@
+.my-features
+	list-style-type: none
+	padding: 0
+	
+	&--item
+		font-size: 16px
+		padding: 5px
+
+		&:before
+			content: "\f058"
+			font-family: FontAwesome
+			position: relative
+			top: 3px
+			color: $brand-primary
+			font-size: 25px
+			margin-right: 10px
+
+@media (max-width: 767px)
+	.my-features
+		padding-left: 20px

@@ -1,7 +1,7 @@
-section
+.section
 	padding: 70px 0
 
-	h3
+	&--heading
 		font-size: 32px
 		text-align: center
 		color: $dark-grey
@@ -16,9 +16,13 @@ section
 			margin: 20px auto
 			border-radius: $border-radius
 
+.section-grey
+	@extend .section
+	background: #F7F8F8
+
 @media (max-width: 767px)
-	section
+	.section
 		padding: 25px 0
 
-		h3
+		&--heading
 			margin-bottom: 50px

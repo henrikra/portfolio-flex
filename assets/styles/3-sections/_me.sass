@@ -1,0 +1,51 @@
+.me
+	&--heading
+		color: $dark-grey
+		font-size: 32px
+		margin-bottom: 20px
+
+	&--story
+		margin-bottom: 15px
+
+		&:last-of-type
+			margin-bottom: 50px
+
+	&--peephole
+		height: 457px
+		background:
+			size: contain
+			attachment: fixed
+			position: 54% 230px
+			repeat: no-repeat
+		margin-top: 50px
+		border-radius: 50%
+		border: 2px solid $brand-primary
+
+@media (max-width: 1199px)
+	.me
+		&--peephole
+			height: 374px
+
+@media (max-width: 991px)
+	.me
+		&--peephole
+			height: 280px
+
+@media (max-width: 767px)
+	.me
+		&--heading
+			text-align: center
+
+		&--peephole
+			background:
+				attachment: scroll
+				position: center
+			height: 400px
+			border-radius: 0
+			border-top: 0
+			border-left: 0
+			border-right: 0
+
+		&--story
+			&:last-of-type
+				margin-bottom: 25px

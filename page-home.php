@@ -13,9 +13,9 @@
 	</div>
 	
 </header>
-<section class="skills">
+<section class="skills section-grey">
 	<div class="container">
-		<h3>Mitä teen?</h3>
+		<h3 class="section--heading">Mitä teen?</h3>
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="service">
@@ -41,4 +41,31 @@
 		</div>
 	</div>
 </section>
-<div style="height:2000px"></div>
+<section class="me section">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="me--container">
+					<h3 class="me--heading">Minusta</h3>
+					<p class="me--story">Nam lacus laborum lacinia. Semper mattis. Commodo nullam vulputate. Laoreet aute augue dignissim. Cillum eleifend. Senectus sollicitudin laboris. Officia pariatur condimentum luctus.</p>
+					<p class="me--story">Commodo nullam vulputate. Laoreet aute augue dignissim. Cillum eleifend. Senectus sollicitudin laboris. Officia pariatur condimentum luctus.</p>
+					<a href="#" class="cta">Katso töitäni</a>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<div class="me--peephole" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/henrik-raitasola.png)">
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<h3 class="me--heading">Plussat</h3>
+				<ul class="my-features">
+					<li class="my-features--item">Reprehenderit et mauris</li>
+					<li class="my-features--item">Eleifend sagittis</li>
+					<li class="my-features--item">Ultricies dignissim vel diam</li>
+					<li class="my-features--item">Eros auctor</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<div style="height:2000px; background: #F7F8F8"></div>
