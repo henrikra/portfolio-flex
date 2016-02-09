@@ -1,5 +1,7 @@
+$intro-height: 700px
+
 .intro
-	height: 600px
+	height: $intro-height
 	background:
 		image: url("../images/header-bg.jpg")
 		repeat: no-repeat
@@ -11,8 +13,7 @@
 		display: flex
 		align-items: center
 		justify-content: center
-		width: 100% 
-		height: 600px
+		height: $intro-height
 		background: rgba(darken($brand-primary, 5%), 0.1)
 
 	&--container
@@ -21,7 +22,7 @@
 	&--catchphrase
 		font-size: 44px
 		color: #fff
-		margin-bottom: 50px
+		margin-bottom: 100px
 		line-height: 45px
 
 @media (max-width: 767px)
