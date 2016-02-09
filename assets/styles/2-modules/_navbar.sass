@@ -1,0 +1,57 @@
+$link-padding: 45px 20px
+$link-padding-tablet: 45px 12px
+
+@keyframes fadeDrop
+	from
+		opacity: 0
+		top: -30px
+	to
+		opacity: 1
+		top: 0px
+
+.navbar-nav > li > a
+	position: relative
+	padding: $link-padding
+	text-transform: uppercase
+	font-weight: 500
+
+.navbar-brand
+	position: relative
+	padding: $link-padding
+	text-transform: uppercase
+	font-weight: 500
+
+@media (max-width: 991px)
+	.navbar-default .navbar-nav > li > a
+		padding: $link-padding-tablet
+
+	.navbar-brand
+		padding: $link-padding-tablet
+
+@media (max-width: 767px)
+	.navbar-default
+		background: rgba($brand-primary, 0.9)
+		border-bottom: 1px solid rgba(#fff, 0.4)
+
+	.navbar-default .navbar-brand
+		padding: 15px
+
+		&:hover
+			color: #fff
+
+	.navbar-toggle
+		margin-top: 8px
+		margin-right: 5px
+
+	.navbar-default .navbar-nav > li > a
+		padding: 15px 5px
+
+		&:hover
+			color: #fff
+
+	.nav
+		padding-bottom: 7px
+
+@media (min-width: 768px)
+	.navbar-nav > li > a, .navbar-brand
+		animation: fadeDrop 1s

@@ -1,0 +1,41 @@
+.button
+	color: #fff
+	padding: 12px 25px
+	border-radius: $border-radius
+	text-transform: uppercase
+	font-weight: 500
+	font-size: 16px
+	transition: all 0.5s
+	display: inline-block
+
+	&:hover, &:focus
+		text-decoration: none
+		color: #fff
+
+.cta
+	@extend .button
+	background: $brand-primary
+
+	&:hover, &:focus
+		background: darken($brand-primary, 3%)
+
+.cta-secondary
+	@extend .button
+	border: 2px solid rgba(#fff, 0.5)
+	background: rgba(#ccc, 0.5)
+	margin-left: 45px
+
+	&:hover, &:focus
+		background: rgba(#ccc, 0.8)
+
+@media (max-width: 767px)
+	.button
+		padding: 10px 25px
+
+	.cta
+		display: block
+		margin-bottom: 15px
+
+	.cta-secondary
+		display: block
+		margin-left: 0
