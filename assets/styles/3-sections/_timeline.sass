@@ -1,0 +1,86 @@
+$time-line-width: 6px
+
+.timeline
+	margin: 50px 0
+	position: relative
+
+	&:before
+		content: ""
+		position: absolute
+		top: 0
+		left: 50%
+		height: 100%
+		width: 6px
+		margin-left: -3px
+		background: $light-grey
+
+	&--event
+		margin-bottom: 30px
+		position: relative
+
+		&:nth-child(even)
+			.timeline
+				&--event-content
+					float: right
+					&:before
+						right: 100%
+						left: auto
+						border-color: transparent
+						border-right-color: #fff
+
+				&--event-date
+					left: auto
+					right: 120%
+					text-align: right
+
+
+
+	&--icon-container
+		width: 44px
+		height: 44px
+		background: $brand-primary
+		border-radius: 50%
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: -22px
+
+	&--icon
+		width: 22px
+		height: 22px
+		color: #fff
+		font-size: 22px
+		position: relative
+		top: 50%
+		display: block
+		margin: -11px auto 0
+		text-align: center
+
+	&--event-date
+		position: absolute
+		left: 120%
+		top: 14px
+		width: 100%
+
+	&--event-content
+		background: #fff
+		width: 45%
+		padding: 20px
+		position: relative
+
+		&:before
+			content: ""
+			position: absolute
+			top: 25px
+			left: 100%
+			width: 0
+			height: 0
+			border: 7px solid transparent
+			border-left-color: #fff
+
+	&--event-heading
+		margin-top: 0
+		color: $dark-grey
+
+	&--event-description
+		margin-bottom: 0

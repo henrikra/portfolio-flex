@@ -46,7 +46,7 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="me--container">
-					<h3 class="me--heading">Minusta</h3>
+					<h3 class="me--heading">Minä!</h3>
 					<p class="me--story">Nam lacus laborum lacinia. Semper mattis. Commodo nullam vulputate. Laoreet aute augue dignissim. Cillum eleifend. Senectus sollicitudin laboris. Officia pariatur condimentum luctus.</p>
 					<p class="me--story">Commodo nullam vulputate. Laoreet aute augue dignissim. Cillum eleifend. Senectus sollicitudin laboris. Officia pariatur condimentum luctus.</p>
 					<a href="#" class="cta">Katso töitäni</a>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="col-sm-3">
-				<h3 class="me--heading">Plussat</h3>
+				<h3 class="me--subheading">Plussat</h3>
 				<ul class="my-features">
 					<li class="my-features--item">Reprehenderit et mauris</li>
 					<li class="my-features--item">Eleifend sagittis</li>
@@ -68,4 +68,55 @@
 		</div>
 	</div>
 </section>
-<div style="height:2000px; background: #F7F8F8"></div>
+<section class="events section-grey">
+	<div class="container">
+		<h3 class="section--heading">Työkokemus</h3>
+		<div class="timeline">
+			<div class="timeline--event">
+				<div class="timeline--icon-container">
+					<i class="timeline--icon fa fa-briefcase"></i>
+				</div>
+				<div class="timeline--event-content">
+					<h4 class="timeline--event-heading">Hellewi</h4>
+					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<time class="timeline--event-date">Toukokuu 2015</time>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="timeline--event">
+				<div class="timeline--icon-container">
+					<i class="timeline--icon fa fa-building"></i>
+				</div>
+				<div class="timeline--event-content">
+					<h4 class="timeline--event-heading">Empower</h4>
+					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<time class="timeline--event-date">Kesäkuu 2014</time>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="timeline--event">
+				<div class="timeline--icon-container">
+					<i class="timeline--icon fa fa-file-code-o"></i>
+				</div>
+				<div class="timeline--event-content">
+					<h4 class="timeline--event-heading">Aloitin koodaamisen</h4>
+					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<time class="timeline--event-date">Syyskuu 2012</time>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="timeline--event">
+				<div class="timeline--icon-container">
+					<i class="timeline--icon fa fa-birthday-cake"></i>
+				</div>
+				<div class="timeline--event-content">
+					<h4 class="timeline--event-heading">Synnyin!</h4>
+					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<time class="timeline--event-date">Toukokuu 1992</time>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<div style="height:2000px; background: #fff"></div>
