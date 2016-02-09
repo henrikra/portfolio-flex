@@ -71,7 +71,7 @@ $time-line-width: 6px
 		&:before
 			content: ""
 			position: absolute
-			top: 25px
+			top: 16px
 			left: 100%
 			width: 0
 			height: 0
@@ -84,3 +84,33 @@ $time-line-width: 6px
 
 	&--event-description
 		margin-bottom: 0
+
+@media (max-width: 767px)
+	.timeline
+		&:before
+			left: 20px
+
+		&--event
+			margin-bottom: 15px
+
+		&--icon-container
+			left: 20px
+
+		&--event-content
+			float: right !important
+			width: 80%
+
+			&:before
+				right: 100%
+				left: auto
+				border-color: transparent
+				border-right-color: #fff
+				top: 15px
+
+		&--event-description
+			margin-bottom: 15px
+
+		&--event-date
+			position: static
+			color: $dark-grey
+			font-size: 14px
