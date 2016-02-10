@@ -9,7 +9,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
+          <img class="navbar-brand--logo" src="http://raitasola.fi/wordpress/wp-content/uploads/2015/09/henrik-raitasola-logo.png">
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->

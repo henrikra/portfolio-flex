@@ -84,6 +84,39 @@
           eventDescription.slideToggle(300);
         });
 
+        function isMobile() {
+          var mobileBreakpoint = 750;
+          return $(window).width() <= mobileBreakpoint;
+        }
+
+        function resizeNavbar() {
+          var distanceFromTop = $(window).scrollTop(),
+              shrinkOn = 100,
+              navbar = $('.navbar');
+          if (distanceFromTop >= shrinkOn) {
+            navbar.addClass('is-small');
+          } else {
+            navbar.removeClass('is-small');
+          }
+        }
+        
+        $(window).scroll(function() {
+          if (isMobile()) {
+            return;
+          }
+          resizeNavbar();
+        });
+        
+        $(window).resize(function() {
+          if (isMobile()) {
+            $('.navbar').removeClass('is-small');
+          } else {
+            resizeNavbar();
+          }
+        });
+
+        resizeNavbar();
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

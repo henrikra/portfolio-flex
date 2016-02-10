@@ -1,57 +1,58 @@
-$link-padding: 45px 20px
-$link-padding-tablet: 45px 12px
+$navbar-animation-duration: 0.5s
 
-@keyframes fadeDrop
-	from
-		opacity: 0
-		top: -30px
-	to
-		opacity: 1
-		top: 0px
+.navbar
+	transition: opacity $navbar-animation-duration
+	opacity: 0
 
 .navbar-nav > li > a
-	position: relative
-	padding: $link-padding
+	padding: 45px 20px
 	text-transform: uppercase
 	font-weight: 500
+	transition: padding $navbar-animation-duration
 
 .navbar-brand
-	position: relative
-	padding: $link-padding
+	padding: 5px 20px
 	text-transform: uppercase
 	font-weight: 500
+	transition: padding $navbar-animation-duration
 
-@media (max-width: 991px)
-	.navbar-default .navbar-nav > li > a
-		padding: $link-padding-tablet
+	&--logo
+		width: 40px
+
+.navbar.is-small
+	border-bottom: 1px solid $extra-light-grey
+	opacity: 1
+
+	.navbar-nav > li > a
+		padding: 25px 20px
 
 	.navbar-brand
-		padding: $link-padding-tablet
+		padding: 15px 20px
 
 @media (max-width: 767px)
 	.navbar-default
-		background: rgba($brand-primary, 0.9)
-		border-bottom: 1px solid rgba(#fff, 0.4)
+		border-color: $extra-light-grey
+		opacity: 1
 
-	.navbar-default .navbar-brand
-		padding: 15px
+	.navbar-brand
+		padding: 10px 15px
 
-		&:hover
-			color: #fff
+	.navbar-brand--logo
+		width: 30px
 
 	.navbar-toggle
 		margin-top: 8px
 		margin-right: 5px
 
-	.navbar-default .navbar-nav > li > a
-		padding: 15px 5px
+		.icon-bar
+			margin: 0 auto
+			border-radius: 0
 
-		&:hover
-			color: #fff
+			&:nth-child(odd)
+				width: 60%
+
+	.navbar-default .navbar-nav > li > a
+		padding: 15px 0
 
 	.nav
-		padding-bottom: 7px
-
-@media (min-width: 768px)
-	.navbar-nav > li > a, .navbar-brand
-		animation: fadeDrop 1s
+		padding-bottom: 5px

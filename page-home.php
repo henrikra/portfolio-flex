@@ -78,7 +78,7 @@
 				</div>
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
-						<h4 class="timeline--event-heading">Hellewi</h4>
+						<h4 class="timeline--event-heading">Web devaajaksi Hellewiin!</h4>
 						<p class="timeline--event-description">Mäntsälä hiiohoi! Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
 						<p class="timeline--event-description">Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
 					</div>
@@ -92,7 +92,7 @@
 				</div>
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
-						<h4 class="timeline--event-heading">Empower</h4>
+						<h4 class="timeline--event-heading">Eka IT-työ Empowerilla</h4>
 						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
 					</div>
 					<time class="timeline--event-date">Kesäkuu 2014</time>
@@ -105,7 +105,7 @@
 				</div>
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
-						<h4 class="timeline--event-heading">Aloitin koodaamisen</h4>
+						<h4 class="timeline--event-heading">Aloitin koodaamisen &lt;3</h4>
 						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
 					</div>
 					<time class="timeline--event-date">Syyskuu 2012</time>
@@ -118,7 +118,7 @@
 				</div>
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
-						<h4 class="timeline--event-heading">Synnyin!</h4>
+						<h4 class="timeline--event-heading">Synnyin tähän maailmaan!</h4>
 						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
 					</div>
 					<time class="timeline--event-date">Toukokuu 1992</time>
