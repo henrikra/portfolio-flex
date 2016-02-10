@@ -90,23 +90,23 @@
         }
 
         function resizeNavbar() {
-          var distanceFromTop = $(window).scrollTop(),
-              shrinkOn = 100,
-              navbar = $('.navbar');
+          var distanceFromTop = $(window).scrollTop();
+          var shrinkOn = 100;
+          var navbar = $('.navbar');
           if (distanceFromTop >= shrinkOn) {
             navbar.addClass('is-small');
           } else {
             navbar.removeClass('is-small');
           }
         }
-        
+
         $(window).scroll(function() {
           if (isMobile()) {
             return;
           }
           resizeNavbar();
         });
-        
+
         $(window).resize(function() {
           if (isMobile()) {
             $('.navbar').removeClass('is-small');
