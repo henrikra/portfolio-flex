@@ -125,7 +125,7 @@
 		</div>
 	</div>
 </section>
-<section class="section">
+<section class="section portfolio">
 	<div class="container">
 		<h3 class="section--heading">Portfolio</h3>
 		<div class="row">
@@ -156,6 +156,7 @@
 				<a href="#" class="work-sample--link"></a>
 			</div>
 		</div>
+		<a href="#" class="cta-secondary">Pyydä lisää</a>
 	</div>
 </section>
-<div style="height:2000px; background: #fff"></div>
+<section class="contact section-grey">kotankti</section>
