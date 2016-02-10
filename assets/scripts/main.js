@@ -30,10 +30,11 @@
         // Adds delay to a function call
         function debounce(fn, delay) {
           var timer = null;
-          return function () {
-            var context = this, args = arguments;
+          return function() {
+            var context = this
+            var args = arguments;
             clearTimeout(timer);
-            timer = setTimeout(function () {
+            timer = setTimeout(function() {
               fn.apply(context, args);
             }, delay);
           };
@@ -55,7 +56,7 @@
           });
           if (visibleCounter === events.length) {
             return true;
-          } 
+          }
           return false;
         }
 
@@ -67,9 +68,11 @@
             return;
           }
 
-          events.each(function(){
-            if (!$(this).find('.timeline--event-content').hasClass('is-visible') && isElementInViewport($(this))) {
-              $(this).find('.timeline--event-content, .timeline--icon-container').addClass('is-visible');
+          events.each(function() {
+            if (!$(this).find('.timeline--event-content').hasClass('is-visible') &&
+              isElementInViewport($(this))) {
+              $(this).find('.timeline--event-content, .timeline--icon-container')
+                .addClass('is-visible');
             }
           });
         }, 100);

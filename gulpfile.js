@@ -20,7 +20,7 @@ var sass         = require('gulp-sass');
 var sassGlob     = require('gulp-sass-glob');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
-var rename       = require("gulp-rename");
+var rename       = require('gulp-rename');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -291,7 +291,7 @@ gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
 
-gulp.task('sass-glob', function () {
+gulp.task('sass-glob', function() {
   return gulp
     .src(path.source + 'styles/all.sass')
     .pipe(sassGlob())
