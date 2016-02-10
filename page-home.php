@@ -79,7 +79,8 @@
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
 						<h4 class="timeline--event-heading">Hellewi</h4>
-						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+						<p class="timeline--event-description">Mäntsälä hiiohoi! Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+						<p class="timeline--event-description">Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
 					</div>
 					<time class="timeline--event-date">Toukokuu 2015</time>
 				</div>

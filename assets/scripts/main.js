@@ -31,7 +31,7 @@
         function debounce(fn, delay) {
           var timer = null;
           return function() {
-            var context = this
+            var context = this;
             var args = arguments;
             clearTimeout(timer);
             timer = setTimeout(function() {
@@ -42,7 +42,7 @@
         // Check if element is in viewport
         function isElementInViewport(element) {
           // multiplier determines how early element is considered visible. Bigger value = earlier visible
-          var multiplier = 0.85;
+          var multiplier = 0.9;
           return element.offset().top <= $(window).scrollTop() + $(window).height() * multiplier;
         }
 
@@ -78,6 +78,11 @@
         }, 100);
 
         $(window).on('scroll', timelineHandler);
+
+        $('.timeline--event-content').click(function() {
+          var eventDescription = $(this).find('.timeline--event-description');
+          eventDescription.slideToggle(300);
+        });
 
       },
       finalize: function() {

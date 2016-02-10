@@ -60,10 +60,6 @@ $date-push: 122%
 						border-color: transparent
 						border-right-color: #fff
 
-					&:hover
-						&:before
-							border-right-color: darken($extra-light-grey, 5%)
-
 				&--event-content
 					float: right
 					left: auto
@@ -108,7 +104,7 @@ $date-push: 122%
 		position: absolute
 		left: $date-push
 		top: 17px
-		width: 100%
+		width: 60%
 
 	&--event-content
 		background: #fff
@@ -121,6 +117,12 @@ $date-push: 122%
 			animation: fadeFromLeft $animation-duration
 			left: 0
 			opacity: 1
+
+		&:hover
+			cursor: pointer
+
+			.timeline--event-heading
+				color: $brand-primary
 
 	&--event-content-container
 		padding: 20px
@@ -135,13 +137,6 @@ $date-push: 122%
 			border: 7px solid transparent
 			border-left-color: #fff
 
-		&:hover
-			background: darken($extra-light-grey, 5%)
-			cursor: pointer
-
-			&:before
-				border-left-color: darken($extra-light-grey, 5%)
-
 	&--event-heading
 		margin: 0
 		color: $dark-grey
@@ -152,6 +147,8 @@ $date-push: 122%
 
 @media (max-width: 767px)
 	.timeline
+		padding: 50px 0
+
 		&:before
 			left: 20px
 
@@ -162,31 +159,32 @@ $date-push: 122%
 			left: 20px
 
 		&--event-content-container
-			padding: 0
+			padding: 15px 15px 0
 
 			&:before
 				right: 100%
 				left: auto
 				border-color: transparent
 				border-right-color: #fff
-				top: 21px
-
-			&:hover
-				background: #fff
-
-				&:before
-					border-color: transparent !important
-					border-right-color: #fff !important
 
 		&--event-content
-			padding: 20px
 			float: right !important
 			width: 80%
 
+		&--event-heading
+			margin-bottom: 5px
+
 		&--event-description
-			margin-bottom: 15px
+			margin: 10px 0 15px
 
 		&--event-date
 			position: static
-			color: $dark-grey
 			font-size: 14px
+			padding: 0 0 15px 15px
+			text-align: left !important
+			display: block
+			width: 100%
+
+	.events
+		.section--heading
+			margin-bottom: 10px
