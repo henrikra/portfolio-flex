@@ -77,8 +77,10 @@
 					<i class="timeline--icon fa fa-briefcase"></i>
 				</div>
 				<div class="timeline--event-content is-hidden">
-					<h4 class="timeline--event-heading">Hellewi</h4>
-					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<div class="timeline--event-content-container">
+						<h4 class="timeline--event-heading">Hellewi</h4>
+						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					</div>
 					<time class="timeline--event-date">Toukokuu 2015</time>
 				</div>
 				<div class="clearfix"></div>
@@ -88,8 +90,10 @@
 					<i class="timeline--icon fa fa-building"></i>
 				</div>
 				<div class="timeline--event-content is-hidden">
-					<h4 class="timeline--event-heading">Empower</h4>
-					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<div class="timeline--event-content-container">
+						<h4 class="timeline--event-heading">Empower</h4>
+						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					</div>
 					<time class="timeline--event-date">Kesäkuu 2014</time>
 				</div>
 				<div class="clearfix"></div>
@@ -99,8 +103,10 @@
 					<i class="timeline--icon fa fa-file-code-o"></i>
 				</div>
 				<div class="timeline--event-content is-hidden">
-					<h4 class="timeline--event-heading">Aloitin koodaamisen</h4>
-					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<div class="timeline--event-content-container">
+						<h4 class="timeline--event-heading">Aloitin koodaamisen</h4>
+						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					</div>
 					<time class="timeline--event-date">Syyskuu 2012</time>
 				</div>
 				<div class="clearfix"></div>
@@ -110,8 +116,10 @@
 					<i class="timeline--icon fa fa-birthday-cake"></i>
 				</div>
 				<div class="timeline--event-content is-hidden">
-					<h4 class="timeline--event-heading">Synnyin!</h4>
-					<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					<div class="timeline--event-content-container">
+						<h4 class="timeline--event-heading">Synnyin!</h4>
+						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+					</div>
 					<time class="timeline--event-date">Toukokuu 1992</time>
 				</div>
 				<div class="clearfix"></div>

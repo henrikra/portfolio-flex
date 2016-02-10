@@ -1,5 +1,6 @@
 $time-line-width: 6px
 $animation-duration: 0.5s
+$date-push: 122%
 
 @keyframes bounce
 	0%
@@ -47,21 +48,26 @@ $animation-duration: 0.5s
 		background: linear-gradient($extra-light-grey, $light-grey)
 
 	&--event
-		margin-bottom: 30px
+		margin-bottom: 40px
 		position: relative
 
 		&:nth-child(even)
 			.timeline
-				&--event-content
-					float: right
-					left: auto
-					right: -30px
-
+				&--event-content-container
 					&:before
 						right: 100%
 						left: auto
 						border-color: transparent
 						border-right-color: #fff
+
+					&:hover
+						&:before
+							border-right-color: darken($extra-light-grey, 5%)
+
+				&--event-content
+					float: right
+					left: auto
+					right: -30px
 
 					&.is-visible
 						animation: fadeFromRight $animation-duration
@@ -69,10 +75,8 @@ $animation-duration: 0.5s
 
 				&--event-date
 					left: auto
-					right: 120%
+					right: $date-push
 					text-align: right
-
-
 
 	&--icon-container
 		width: 44px
@@ -80,7 +84,7 @@ $animation-duration: 0.5s
 		background: $brand-primary
 		border-radius: 50%
 		position: absolute
-		top: 0
+		top: 7px
 		left: 50%
 		margin-left: -22px
 		opacity: 0
@@ -102,39 +106,49 @@ $animation-duration: 0.5s
 
 	&--event-date
 		position: absolute
-		left: 120%
-		top: 14px
+		left: $date-push
+		top: 17px
 		width: 100%
 
 	&--event-content
 		background: #fff
 		width: 45%
-		padding: 20px
 		position: relative
 		left: -30px
 		opacity: 0
-
-		&:before
-			content: ""
-			position: absolute
-			top: 16px
-			left: 100%
-			width: 0
-			height: 0
-			border: 7px solid transparent
-			border-left-color: #fff
 
 		&.is-visible
 			animation: fadeFromLeft $animation-duration
 			left: 0
 			opacity: 1
 
+	&--event-content-container
+		padding: 20px
+
+		&:before
+			content: ""
+			position: absolute
+			top: 22px
+			left: 100%
+			width: 0
+			height: 0
+			border: 7px solid transparent
+			border-left-color: #fff
+
+		&:hover
+			background: darken($extra-light-grey, 5%)
+			cursor: pointer
+
+			&:before
+				border-left-color: darken($extra-light-grey, 5%)
+
 	&--event-heading
-		margin-top: 0
+		margin: 0
 		color: $dark-grey
 
 	&--event-description
-		margin-bottom: 0
+		margin: 15px 0 0
+		display: none
 
 @media (max-width: 767px)
 	.timeline
@@ -147,16 +161,27 @@ $animation-duration: 0.5s
 		&--icon-container
 			left: 20px
 
-		&--event-content
-			float: right !important
-			width: 80%
+		&--event-content-container
+			padding: 0
 
 			&:before
 				right: 100%
 				left: auto
 				border-color: transparent
 				border-right-color: #fff
-				top: 15px
+				top: 21px
+
+			&:hover
+				background: #fff
+
+				&:before
+					border-color: transparent !important
+					border-right-color: #fff !important
+
+		&--event-content
+			padding: 20px
+			float: right !important
+			width: 80%
 
 		&--event-description
 			margin-bottom: 15px
