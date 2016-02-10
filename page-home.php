@@ -125,4 +125,37 @@
 		</div>
 	</div>
 </section>
+<section class="section">
+	<div class="container">
+		<h3 class="section--heading">Portfolio</h3>
+		<div class="row">
+			<div class="work-sample col-sm-4 col-sm-offset-2" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-1.jpg)">
+				<div class="work-sample--overlay">
+					<h4 class="work-sample--title">Gym Diary</h4>
+				</div>
+				<a href="#" class="work-sample--link"></a>
+			</div>
+			<div class="work-sample col-sm-4" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-2.jpg)">
+				<div class="work-sample--overlay">
+					<h4 class="work-sample--title">Reactive Movies</h4>
+				</div>
+				<a href="#" class="work-sample--link"></a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="work-sample col-sm-4 col-sm-offset-2" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-3.jpg)">
+				<div class="work-sample--overlay">
+					<h4 class="work-sample--title">Natural High Healing Festival</h4>
+				</div>
+				<a href="#" class="work-sample--link"></a>
+			</div>
+			<div class="work-sample col-sm-4" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-4.jpg)">
+				<div class="work-sample--overlay">
+					<h4 class="work-sample--title">Meteor Chat</h4>
+				</div>
+				<a href="#" class="work-sample--link"></a>
+			</div>
+		</div>
+	</div>
+</section>
 <div style="height:2000px; background: #fff"></div>

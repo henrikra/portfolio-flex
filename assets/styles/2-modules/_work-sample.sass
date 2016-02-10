@@ -1,0 +1,29 @@
+.work-sample
+	height: 250px
+	border: 3px solid #fff
+	background:
+		size: cover
+	position: relative
+	overflow: hidden
+
+	&--overlay
+		position: absolute
+		top: 0
+		right: 100%
+		bottom: 0
+		background: rgba($brand-primary, 0.9)
+		color: #fff
+		transition: right 0.5s
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		padding: 20px
+		text-align: center
+
+	&--title
+		font-size: 28px
+
+	&:hover
+		.work-sample--overlay
+			right: 0
