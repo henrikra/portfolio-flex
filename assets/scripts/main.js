@@ -27,14 +27,55 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
-        $(window).on('scroll', function(){
-          $('.timeline--event').each(function(){
-            if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.timeline--event-content').hasClass('is-hidden') ) {
+        // Adds delay to a function call
+        function debounce(fn, delay) {
+          var timer = null;
+          return function () {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+              fn.apply(context, args);
+            }, delay);
+          };
+        }
+        // Check if element is in viewport
+        function isElementInViewport(element) {
+          // multiplier determines how early element is considered visible. Bigger value = earlier visible
+          var multiplier = 0.85;
+          return element.offset().top <= $(window).scrollTop() + $(window).height() * multiplier;
+        }
+
+        // check if all events are visible
+        function isAllEventsVisible(events) {
+          var visibleCounter = 0;
+          events.each(function() {
+            if ($(this).find('.timeline--event-content').hasClass('is-visible')) {
+              visibleCounter++;
+            }
+          });
+          if (visibleCounter === events.length) {
+            return true;
+          } 
+          return false;
+        }
+
+        var timelineHandler = debounce(function() {
+          var events = $('.timeline--event');
+
+          if (isAllEventsVisible(events)) {
+            $(window).off('scroll', timelineHandler);
+            return;
+          }
+
+          events.each(function(){
+            if (!$(this).find('.timeline--event-content').hasClass('is-visible') && isElementInViewport($(this))) {
               $(this).find('.timeline--event-content, .timeline--icon-container').addClass('is-visible');
             }
           });
-        });
+        }, 100);
+
+        $(window).on('scroll', timelineHandler);
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
