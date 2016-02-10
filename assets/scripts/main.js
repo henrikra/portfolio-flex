@@ -28,6 +28,13 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $(window).on('scroll', function(){
+          $('.timeline--event').each(function(){
+            if( $(this).offset().top <= $(window).scrollTop()+$(window).height()*0.75 && $(this).find('.timeline--event-content').hasClass('is-hidden') ) {
+              $(this).find('.timeline--event-content, .timeline--icon-container').addClass('is-visible');
+            }
+          });
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

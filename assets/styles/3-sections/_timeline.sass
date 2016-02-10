@@ -1,4 +1,33 @@
 $time-line-width: 6px
+$animation-duration: 0.5s
+
+@keyframes bounce
+	0%
+		transform: scale(0.5)
+	60%
+		transform: scale(1.2)
+	100%
+		transform: scale(1)
+
+@keyframes fadeFromLeft
+	0%
+		left: -30px
+		opacity: 0
+	60%
+		left: 15px
+	100%
+		left: 0
+		opacity: 1
+
+@keyframes fadeFromRight
+	0%
+		right: -30px
+		opacity: 0
+	60%
+		right: 15px
+	100%
+		right: 0
+		opacity: 1
 
 .timeline
 	margin: 50px 0
@@ -22,11 +51,18 @@ $time-line-width: 6px
 			.timeline
 				&--event-content
 					float: right
+					left: auto
+					right: -30px
+
 					&:before
 						right: 100%
 						left: auto
 						border-color: transparent
 						border-right-color: #fff
+
+					&.is-visible
+						animation: fadeFromRight $animation-duration
+						right: 0
 
 				&--event-date
 					left: auto
@@ -44,6 +80,11 @@ $time-line-width: 6px
 		top: 0
 		left: 50%
 		margin-left: -22px
+		opacity: 0
+
+		&.is-visible
+			animation: bounce $animation-duration
+			opacity: 1
 
 	&--icon
 		width: 22px
@@ -67,6 +108,8 @@ $time-line-width: 6px
 		width: 45%
 		padding: 20px
 		position: relative
+		left: -30px
+		opacity: 0
 
 		&:before
 			content: ""
@@ -77,6 +120,11 @@ $time-line-width: 6px
 			height: 0
 			border: 7px solid transparent
 			border-left-color: #fff
+
+		&.is-visible
+			animation: fadeFromLeft $animation-duration
+			left: 0
+			opacity: 1
 
 	&--event-heading
 		margin-top: 0
