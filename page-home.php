@@ -166,29 +166,57 @@
 <section class="contact section-grey">
 	<div class="container">
 		<h3 class="section--heading">Ota yhteyttä</h3>
-		<form>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="form-group">
-						<input class="input" type="text" placeholder="Sähköposti">
+		<div class="row">
+			<div class="col-sm-8">
+				<form>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<input class="input" type="text" placeholder="Sähköposti">
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<input class="input" type="text" placeholder="Puhelin">
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-sm-6">
-					<div class="form-group">
-						<input class="input" type="text" placeholder="Puhelin">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="form-group">
+								<textarea class="input contact--message" placeholder="Viesti"></textarea>
+							</div>
+						</div>
 					</div>
-				</div>
+					<button class="button-sharp contact--send" type="submit">
+						Lähetä <i class="fa fa-paper-plane"></i>
+					</button>
+				</form>
 			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="form-group">
-						<textarea class="input contact--message" placeholder="Viesti"></textarea>
+			<div class="col-sm-4">
+				<a href="#" class="contact-item">
+					<div class="contact-item--icon-container">
+						<i class="contact-item--icon fa fa-mobile"></i>
 					</div>
-				</div>
+					<span class="contact-item--content">0400 637916</span>
+					<div class="clearfix"></div>
+				</a>
+				<a href="#" class="contact-item">
+					<div class="contact-item--icon-container">
+						<i class="contact-item--icon fa fa-envelope"></i>
+					</div>
+					<span class="contact-item--content">henrik@raitasola.fi</span>
+					<div class="clearfix"></div>
+				</a>
+				<a href="#" class="contact-item">
+					<div class="contact-item--icon-container">
+						<i class="contact-item--icon fa fa-globe"></i>
+					</div>
+					<span class="contact-item--content">Helsinki, Suomi</span>
+					<div class="clearfix"></div>
+				</a>
 			</div>
-			<button class="button-sharp contact--send" type="submit">
-				Lähetä <i class="fa fa-paper-plane"></i>
-			</button>
-		</form>
+		</div>
+		
 	</div>
 </section>
