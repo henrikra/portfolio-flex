@@ -1,0 +1,31 @@
+.modal-content
+	border-radius: 0
+	box-shadow: none
+
+.modal-title
+	color: $dark-grey
+	font-size: 24px
+
+.modal-button
+	& + .modal-button
+		margin-left: 10px
+
+.close
+	font-size: 23px
+
+.modal.in
+	display: flex !important
+	align-items: center
+
+.modal.push-fade .modal-dialog
+	opacity: 0
+	transition: all 0.5s
+	transform: translateX(100px)
+
+.modal.in .modal-dialog
+	opacity: 1
+	transform: translateX(0px)
+
+@media (max-width: 767px)
+	.modal-button
+		float: left

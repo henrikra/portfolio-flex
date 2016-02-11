@@ -135,19 +135,26 @@
 						<h4 class="work-sample--title">Gym Diary</h4>
 					</div>
 				</button>
-				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal push-fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
-				      <div class="modal-header">
+				    	<div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title 1</h4>
+				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
 				      </div>
 				      <div class="modal-body">
-				        ...
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+				        <ul class="keywords">
+				        	<li class="keywords--item">React</li>
+				        	<li class="keywords--item">Redux</li>
+				        	<li class="keywords--item">Webpack</li>
+				        	<li class="keywords--item">Node.js</li>
+				        </ul>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
+				        <a href="https://github.com/henrikra/gym-diary" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
+				        <a href="http://ec2-54-93-74-64.eu-central-1.compute.amazonaws.com/#/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
 				      </div>
 				    </div>
 				  </div>
@@ -159,19 +166,21 @@
 						<h4 class="work-sample--title">Reactive Movies</h4>
 					</div>
 				</button>
-				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal push-fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title 2</h4>
+				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
 				      </div>
 				      <div class="modal-body">
-				        ...
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
+				        <a href="https://github.com/henrikra/gym-diary" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
+				        <a href="http://ec2-54-93-74-64.eu-central-1.compute.amazonaws.com/#/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
 				      </div>
 				    </div>
 				  </div>
@@ -185,19 +194,21 @@
 						<h4 class="work-sample--title">Natural High Healing Festival</h4>
 					</div>
 				</button>
-				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal push-fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title 3</h4>
+				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
 				      </div>
 				      <div class="modal-body">
-				        ...
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
+				        <a href="https://github.com/henrikra/gym-diary" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
+				        <a href="http://ec2-54-93-74-64.eu-central-1.compute.amazonaws.com/#/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
 				      </div>
 				    </div>
 				  </div>
@@ -209,26 +220,30 @@
 						<h4 class="work-sample--title">Meteor Chat</h4>
 					</div>
 				</button>
-				<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal push-fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 				  <div class="modal-dialog" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title 4</h4>
+				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
 				      </div>
 				      <div class="modal-body">
-				        ...
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				        <button type="button" class="btn btn-primary">Save changes</button>
+				        <a href="https://github.com/henrikra/gym-diary" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
+				        <a href="http://ec2-54-93-74-64.eu-central-1.compute.amazonaws.com/#/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
 				      </div>
 				    </div>
 				  </div>
 				</div>
 			</div>
 		</div>
-		<a href="#contact" class="button-ghost cta">Pyydä lisää</a>
+		<div class="text-center">
+			<a href="#contact" class="button-ghost cta">Pyydä lisää</a>
+		</div>
 	</div>
 </section>
 <section id="contact" class="contact section-grey">
