@@ -167,7 +167,7 @@
 	<div class="container">
 		<h3 class="section--heading">Ota yhteyttä</h3>
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-md-8 col-sm-7">
 				<form>
 					<div class="row">
 						<div class="col-sm-6">
@@ -193,7 +193,7 @@
 					</button>
 				</form>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-md-4 col-sm-5">
 				<a href="#" class="contact-item">
 					<div class="contact-item--icon-container">
 						<i class="contact-item--icon fa fa-mobile"></i>
@@ -205,7 +205,7 @@
 					<div class="contact-item--icon-container">
 						<i class="contact-item--icon fa fa-envelope"></i>
 					</div>
-					<span class="contact-item--content">henrik@raitasola.fi</span>
+					<span class="contact-item--content">henrik.raitasola@gmail.com</span>
 					<div class="clearfix"></div>
 				</a>
 				<a href="#" class="contact-item">
