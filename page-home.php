@@ -7,8 +7,8 @@
 	<div class="intro--overlay">
 		<div class="intro--container">
 			<div class="intro--catchphrase">Tekemässä nettisivuja, jotta sinun ei tarvitse</div>
-			<a href="#" class="cta">Katso töitäni</a>
-			<a href="#" class="cta-secondary">Ota yhteyttä</a>
+			<a href="#" class="cta button">Katso töitäni</a>
+			<a href="#" class="cta-secondary button-glass">Ota yhteyttä</a>
 		</div>
 	</div>
 	
@@ -55,7 +55,7 @@
 						<li class="my-features--item">Nörtti</li>
 						<li class="my-features--item">Osaa tehdä ruokaa</li>
 					</ul>
-					<a href="#" class="cta">Katso töitäni</a>
+					<a href="#" class="button">Katso töitäni</a>
 				</div>
 			</div>
 			<div class="col-sm-5">
@@ -156,7 +156,7 @@
 				<a href="#" class="work-sample--link"></a>
 			</div>
 		</div>
-		<a href="#" class="cta-secondary">Pyydä lisää</a>
+		<a href="#" class="button-ghost cta">Pyydä lisää</a>
 	</div>
 </section>
 <section class="contact section-grey">kotankti</section>

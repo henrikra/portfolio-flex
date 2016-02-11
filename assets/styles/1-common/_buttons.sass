@@ -8,19 +8,14 @@
 	transition: all 0.5s
 	display: inline-block
 	text-align: center
+	background: $brand-primary
 
 	&:hover, &:focus
 		text-decoration: none
 		color: #fff
-
-.cta
-	@extend .button
-	background: $brand-primary
-
-	&:hover, &:focus
 		background: darken($brand-primary, 3%)
 
-.cta-secondary
+.button-glass
 	@extend .button
 	border: 2px solid rgba(#fff, 0.5)
 	background: rgba($light-grey, 0.5)
@@ -28,13 +23,16 @@
 	&:hover, &:focus
 		background: rgba($light-grey, 0.8)
 
+.button-ghost
+	@extend .button
+	background: transparent
+	color: $brand-primary
+	border: 2px solid $brand-primary
+
+	&:hover, &:focus
+		background: $brand-primary
+
 @media (max-width: 767px)
 	.button
 		padding: 10px 25px
-
-	.cta
-		display: block
-		margin-bottom: 15px
-
-	.cta-secondary
 		display: block
