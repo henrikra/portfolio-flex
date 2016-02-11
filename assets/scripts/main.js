@@ -10,7 +10,7 @@
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
 
-(function($) {
+(function($, h) {
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
@@ -27,50 +27,17 @@
     // Home page
     'home': {
       init: function() {
-        // Adds delay to a function call
-        function debounce(fn, delay) {
-          var timer = null;
-          return function() {
-            var context = this;
-            var args = arguments;
-            clearTimeout(timer);
-            timer = setTimeout(function() {
-              fn.apply(context, args);
-            }, delay);
-          };
-        }
-        // Check if element is in viewport
-        function isElementInViewport(element) {
-          // multiplier determines how early element is considered visible. Bigger value = earlier visible
-          var multiplier = 0.9;
-          return element.offset().top <= $(window).scrollTop() + $(window).height() * multiplier;
-        }
-
-        // check if all events are visible
-        function isAllEventsVisible(events) {
-          var visibleCounter = 0;
-          events.each(function() {
-            if ($(this).find('.timeline--event-content').hasClass('is-visible')) {
-              visibleCounter++;
-            }
-          });
-          if (visibleCounter === events.length) {
-            return true;
-          }
-          return false;
-        }
-
-        var timelineHandler = debounce(function() {
+        var timelineHandler = h.debounce(function() {
           var events = $('.timeline--event');
 
-          if (isAllEventsVisible(events)) {
+          if (h.isAllEventsVisible(events)) {
             $(window).off('scroll', timelineHandler);
             return;
           }
 
           events.each(function() {
             if (!$(this).find('.timeline--event-content').hasClass('is-visible') &&
-              isElementInViewport($(this))) {
+              h.isElementInViewport($(this))) {
               $(this).find('.timeline--event-content, .timeline--icon-container')
                 .addClass('is-visible');
             }
@@ -84,38 +51,24 @@
           eventDescription.slideToggle(300);
         });
 
-        function isMobile() {
-          var mobileBreakpoint = 750;
-          return $(window).width() <= mobileBreakpoint;
-        }
-
-        function resizeNavbar() {
-          var distanceFromTop = $(window).scrollTop();
-          var shrinkOn = 100;
-          var navbar = $('.navbar');
-          if (distanceFromTop >= shrinkOn) {
-            navbar.addClass('is-small');
-          } else {
-            navbar.removeClass('is-small');
-          }
-        }
-
         $(window).scroll(function() {
-          if (isMobile()) {
+          if (h.isMobile()) {
             return;
           }
-          resizeNavbar();
+          h.resizeNavbar();
         });
 
         $(window).resize(function() {
-          if (isMobile()) {
+          if (h.isMobile()) {
             $('.navbar').removeClass('is-small');
           } else {
-            resizeNavbar();
+            h.resizeNavbar();
           }
         });
 
-        resizeNavbar();
+        (function init() {
+          h.resizeNavbar();
+        })();
 
       },
       finalize: function() {
@@ -163,4 +116,4 @@
   // Load Events
   $(document).ready(UTIL.loadEvents);
 
-})(jQuery); // Fully reference jQuery after this point.
+})(jQuery, helpers); // Fully reference jQuery after this point.
