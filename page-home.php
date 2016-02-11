@@ -130,34 +130,102 @@
 		<h3 class="section--heading">Portfolio</h3>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
-				<a href="#" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-1.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal1" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-1.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Gym Diary</h4>
 					</div>
-				</a>
+				</button>
+				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title 1</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-sm-4">
-				<a href="#" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-2.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal2" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-2.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Reactive Movies</h4>
 					</div>
-				</a>
+				</button>
+				<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title 2</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
-				<a href="#" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-3.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal3" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-3.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Natural High Healing Festival</h4>
 					</div>
-				</a>
+				</button>
+				<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title 3</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-sm-4">
-				<a href="#" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-4.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal4" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-4.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Meteor Chat</h4>
 					</div>
-				</a>
+				</button>
+				<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title 4</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-primary">Save changes</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
 		<a href="#contact" class="button-ghost cta">Pyydä lisää</a>
