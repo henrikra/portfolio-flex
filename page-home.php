@@ -7,13 +7,13 @@
 	<div class="intro--overlay">
 		<div class="intro--container">
 			<div class="intro--catchphrase">Tekemässä nettisivuja, jotta sinun ei tarvitse</div>
-			<a href="#" class="cta button">Katso töitäni</a>
-			<a href="#" class="cta-secondary button-glass">Ota yhteyttä</a>
+			<a href="#portfolio" class="cta button">Katso töitäni</a>
+			<a href="#contact" class="cta-secondary button-glass">Ota yhteyttä</a>
 		</div>
 	</div>
 	
 </header>
-<section class="skills section-grey">
+<section id="skills" class="skills section-grey">
 	<div class="container">
 		<h3 class="section--heading">Mitä teen?</h3>
 		<div class="row">
@@ -41,7 +41,7 @@
 		</div>
 	</div>
 </section>
-<section class="me section">
+<section id="me" class="me section">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-7">
@@ -55,7 +55,7 @@
 						<li class="my-features--item">Nörtti</li>
 						<li class="my-features--item">Osaa tehdä ruokaa</li>
 					</ul>
-					<a href="#" class="button">Katso töitäni</a>
+					<a href="#portfolio" class="button">Katso töitäni</a>
 				</div>
 			</div>
 			<div class="col-sm-5">
@@ -65,7 +65,7 @@
 		</div>
 	</div>
 </section>
-<section class="events section-grey">
+<section id="events" class="events section-grey">
 	<div class="container">
 		<h3 class="section--heading">Työkokemus</h3>
 		<div class="timeline">
@@ -125,7 +125,7 @@
 		</div>
 	</div>
 </section>
-<section class="section portfolio">
+<section id="portfolio" class="section portfolio">
 	<div class="container">
 		<h3 class="section--heading">Portfolio</h3>
 		<div class="row">
@@ -160,10 +160,10 @@
 				</a>
 			</div>
 		</div>
-		<a href="#" class="button-ghost cta">Pyydä lisää</a>
+		<a href="#contact" class="button-ghost cta">Pyydä lisää</a>
 	</div>
 </section>
-<section class="contact section-grey">
+<section id="contact" class="contact section-grey">
 	<div class="container">
 		<h3 class="section--heading">Ota yhteyttä</h3>
 		<div class="row">
@@ -172,12 +172,12 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
-								<input class="input" type="text" placeholder="Sähköposti">
+								<input class="input" type="email" placeholder="Sähköposti">
 							</div>
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group">
-								<input class="input" type="text" placeholder="Puhelin">
+								<input class="input" type="tel" placeholder="Puhelin">
 							</div>
 						</div>
 					</div>

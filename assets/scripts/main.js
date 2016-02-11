@@ -18,7 +18,30 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+        $(window).scroll(function() {
+          if (h.isMobile()) {
+            return;
+          }
+          h.resizeNavbar();
+        });
+
+        $(window).resize(function() {
+          if (h.isMobile()) {
+            $('.navbar').removeClass('is-small');
+          } else {
+            h.resizeNavbar();
+          }
+        });
+
+        $('a[href^="#"]').click(function(event) {
+          event.preventDefault();
+          var href = $(this).attr('href');
+          h.scrollTo(href);
+        });
+
+        (function init() {
+          h.resizeNavbar();
+        })();
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -50,26 +73,6 @@
           var eventDescription = $(this).find('.timeline--event-description');
           eventDescription.slideToggle(300);
         });
-
-        $(window).scroll(function() {
-          if (h.isMobile()) {
-            return;
-          }
-          h.resizeNavbar();
-        });
-
-        $(window).resize(function() {
-          if (h.isMobile()) {
-            $('.navbar').removeClass('is-small');
-          } else {
-            h.resizeNavbar();
-          }
-        });
-
-        (function init() {
-          h.resizeNavbar();
-        })();
-
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

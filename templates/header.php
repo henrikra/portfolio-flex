@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
+        <a class="navbar-brand" href="#">
           <img class="navbar-brand--logo" src="http://raitasola.fi/wordpress/wp-content/uploads/2015/09/henrik-raitasola-logo.png">
         </a>
       </div>
@@ -17,11 +17,11 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Minusta</a></li>
-          <li><a href="#">Taidot</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Työkokemus</a></li>
-          <li><a href="#">Ota yhteyttä</a></li>
+          <li><a href="#skills">Taidot</a></li>
+          <li><a href="#me">Minusta</a></li>
+          <li><a href="#events">Työkokemus</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Ota yhteyttä</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

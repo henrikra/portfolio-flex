@@ -46,6 +46,12 @@
       } else {
         navbar.removeClass('is-small');
       }
+    },
+    // scroll to element
+    scrollTo: function(href) {
+      $('html, body').animate({
+        scrollTop: href === '#' ? 0 : $(href).offset().top
+      }, 1000);
     }
 	};
 	window.helpers = helpers;
