@@ -49,8 +49,11 @@
     },
     // scroll to element
     scrollTo: function(href) {
+      var offset = $('.navbar-header').height() > 70 ? 70 : $('.navbar-header').height();
+      $('#navbar-collapse').collapse('hide');
+
       $('html, body').animate({
-        scrollTop: href === '#' ? 0 : $(href).offset().top
+        scrollTop: href === '#' ? 0 : $(href).offset().top - offset
       }, 1000);
     }
 	};
