@@ -159,4 +159,32 @@
 		<a href="#" class="button-ghost cta">Pyydä lisää</a>
 	</div>
 </section>
-<section class="contact section-grey">kotankti</section>
+<section class="contact section-grey">
+	<div class="container">
+		<h3 class="section--heading">Ota yhteyttä</h3>
+		<form>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="form-group">
+						<input class="input" type="text" placeholder="Sähköposti">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<input class="input" type="text" placeholder="Puhelin">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="form-group">
+						<textarea class="input contact--message" placeholder="Viesti"></textarea>
+					</div>
+				</div>
+			</div>
+			<button class="button-sharp contact--send" type="submit">
+				Lähetä <i class="fa fa-paper-plane"></i>
+			</button>
+		</form>
+	</div>
+</section>

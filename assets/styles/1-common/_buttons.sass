@@ -9,6 +9,7 @@
 	display: inline-block
 	text-align: center
 	background: $brand-primary
+	border: 0
 
 	&:hover, &:focus
 		text-decoration: none
@@ -31,6 +32,10 @@
 
 	&:hover, &:focus
 		background: $brand-primary
+
+.button-sharp
+	@extend .button
+	border-radius: 0
 
 @media (max-width: 767px)
 	.button
