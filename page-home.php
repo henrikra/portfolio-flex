@@ -242,7 +242,7 @@
 			</div>
 		</div>
 		<div class="text-center">
-			<a href="#contact" class="button-ghost cta">Pyydä lisää</a>
+			<a href="#contact" class="button-ghost cta">Pyydä lisää työnäytteitä</a>
 		</div>
 	</div>
 </section>
