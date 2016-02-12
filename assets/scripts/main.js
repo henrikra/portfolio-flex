@@ -25,7 +25,11 @@
         });
 
         $(window).resize(function() {
-          h.isMobile() ? $('.navbar').removeClass('is-small') : h.resizeNavbar();
+          if (h.isMobile()) {
+            $('.navbar').removeClass('is-small');
+          } else {
+            h.resizeNavbar();
+          }
         });
 
         $('a[href^="#"]').click(function(event) {
