@@ -19,24 +19,19 @@
     'common': {
       init: function() {
         $(window).scroll(function() {
-          if (h.isMobile()) {
-            return;
-          }
-          h.resizeNavbar();
-        });
-
-        $(window).resize(function() {
-          if (h.isMobile()) {
-            $('.navbar').removeClass('is-small');
-          } else {
+          if (!h.isMobile()) {
             h.resizeNavbar();
           }
         });
 
+        $(window).resize(function() {
+          h.isMobile() ? $('.navbar').removeClass('is-small') : h.resizeNavbar();
+        });
+
         $('a[href^="#"]').click(function(event) {
           event.preventDefault();
-          var href = $(this).attr('href');
-          h.scrollTo(href);
+          var targetElement = $(this).attr('href');
+          h.scrollTo(targetElement);
         });
 
         (function init() {

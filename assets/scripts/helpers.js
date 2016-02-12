@@ -48,14 +48,15 @@
       }
     },
     // scroll to element
-    scrollTo: function(href) {
+    scrollTo: function(targetElement) {
       var offset = $('.navbar-header').height() > 70 ? 70 : $('.navbar-header').height();
       $('#navbar-collapse').collapse('hide');
 
       $('html, body').animate({
-        scrollTop: href === '#' ? 0 : $(href).offset().top - offset
+        scrollTop: targetElement === '#' ? 0 : $(targetElement).offset().top - offset
       }, 1000);
     }
 	};
+  
 	window.helpers = helpers;
 })(jQuery);
