@@ -130,7 +130,7 @@
 		<h3 class="section--heading">Portfolio</h3>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
-				<button type="button" data-toggle="modal" data-target="#myModal1" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-1.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal1" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/gym-diary.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Gym Diary</h4>
 					</div>
@@ -161,7 +161,7 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<button type="button" data-toggle="modal" data-target="#myModal2" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-2.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal2" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/reactive-movies.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Reactive Movies</h4>
 					</div>
@@ -189,9 +189,9 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
-				<button type="button" data-toggle="modal" data-target="#myModal3" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-3.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal3" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/alpin-fysioterapia.jpg)">
 					<div class="work-sample--overlay">
-						<h4 class="work-sample--title">Natural High Healing Festival</h4>
+						<h4 class="work-sample--title">Alpin Fysioterapia</h4>
 					</div>
 				</button>
 				<div class="modal push-fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -215,9 +215,9 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<button type="button" data-toggle="modal" data-target="#myModal4" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/work-sample-4.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal4" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/webin.jpg)">
 					<div class="work-sample--overlay">
-						<h4 class="work-sample--title">Meteor Chat</h4>
+						<h4 class="work-sample--title">Webin</h4>
 					</div>
 				</button>
 				<div class="modal push-fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
