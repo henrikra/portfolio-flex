@@ -21,21 +21,21 @@
 				<div class="service">
 					<i class="service--icon fa fa-desktop"></i>
 					<h4 class="service--heading">Suunnittelu</h4>
-					<p class="service--description">Aliquam nunclorem conubia. Quisque ultricies cras ad. Molestie nunclorem. Fermentum eiusmod. Quisque ultricies cras ad. Molestie nunclorem.</p>
+					<p class="service--description">Mietin etukäteen mitä teknologioita projektikohtaisesti kannattaa käyttää. Lisäksi kaavailen   rautalankamallit käyttöliittymästä ennen ohjelmoinnin aloittamista.</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="service">
 					<i class="service--icon fa fa-code"></i>
-					<h4 class="service--heading">Koodausta</h4>
-					<p class="service--description">Aliquam nunclorem conubia. Quisque ultricies cras ad. Molestie nunclorem. Fermentum eiusmod. Quisque ultricies cras ad. Molestie nunclorem.</p>
+					<h4 class="service--heading">Koodaaminen</h4>
+					<p class="service--description">Koodaaminen on vahvuuteni, sillä sitä olen tehnyt pisimpään. Koodatessa keskityn koodin siisteyteen ja sen ylläpidettävyyteen.</p>
 				</div>
 			</div>
 			<div class="col-sm-4">
 				<div class="service">
 					<i class="service--icon fa fa-server"></i>
-					<h4 class="service--heading">Tuotantoon</h4>
-					<p class="service--description">Aliquam nunclorem conubia. Quisque ultricies cras ad. Molestie nunclorem. Fermentum eiusmod. Quisque ultricies cras ad. Molestie nunclorem.</p>
+					<h4 class="service--heading">Julkaiseminen</h4>
+					<p class="service--description">Hallitsen Linux palvelimien käytön, joten valmiin projektin vieminen maailmalle näkyviin ei tuota ongelmia.</p>
 				</div>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 			<div class="col-sm-7">
 				<div class="me--container">
 					<h3 class="me--heading">Minä!</h3>
-					<p class="me--story">Nam lacus laborum lacinia. Semper mattis. Commodo nullam vulputate. Laoreet aute augue dignissim. Cillum eleifend. Senectus sollicitudin laboris. Officia pariatur condimentum luctus.</p>
+					<p class="me--story">Olen Henrik Raitasola ja kehitän nettisivuja suunnitteluvaiheesta aina julkaisuun asti. </p>
 					<p class="me--story">Commodo nullam vulputate. Laoreet aute augue dignissim. Cillum eleifend. Senectus sollicitudin laboris. Officia pariatur condimentum luctus.</p>
 					<ul class="my-features">
 						<li class="my-features--item">Hyvä tyyppi</li>
@@ -59,7 +59,7 @@
 				</div>
 			</div>
 			<div class="col-sm-5">
-				<img class="me--profile-picture img-responsive" src="<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/henrik-raitasola.png">
+				<img class="me--profile-picture img-responsive" src="<?php bloginfo('stylesheet_directory'); ?>/dist/images/henrik-raitasola.png">
 				</div>
 			</div>
 		</div>
@@ -130,7 +130,7 @@
 		<h3 class="section--heading">Portfolio</h3>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
-				<button type="button" data-toggle="modal" data-target="#myModal1" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/gym-diary.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal1" class="work-sample" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/dist/images/gym-diary.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Gym Diary</h4>
 					</div>
@@ -161,7 +161,7 @@
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<button type="button" data-toggle="modal" data-target="#myModal2" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/reactive-movies.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal2" class="work-sample" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/dist/images/reactive-movies.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Reactive Movies</h4>
 					</div>
@@ -179,8 +179,8 @@
 
 				      </div>
 				      <div class="modal-footer">
-				        <a href="https://github.com/henrikra/gym-diary" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
-				        <a href="http://ec2-54-93-74-64.eu-central-1.compute.amazonaws.com/#/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
+				        <a href="https://github.com/henrikra/reactive-movies" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
+				        <a href="http://henrikra.github.io/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
 				      </div>
 				    </div>
 				  </div>
@@ -189,7 +189,7 @@
 		</div>
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-2">
-				<button type="button" data-toggle="modal" data-target="#myModal3" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/alpin-fysioterapia.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal3" class="work-sample" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/dist/images/alpin-fysioterapia.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Alpin Fysioterapia</h4>
 					</div>
@@ -207,15 +207,14 @@
 
 				      </div>
 				      <div class="modal-footer">
-				        <a href="https://github.com/henrikra/gym-diary" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
-				        <a href="http://ec2-54-93-74-64.eu-central-1.compute.amazonaws.com/#/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
+				        <a href="http://alpinfysioterapia.fi/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
 				      </div>
 				    </div>
 				  </div>
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<button type="button" data-toggle="modal" data-target="#myModal4" class="work-sample" style="background-image: url(<?php echo bloginfo('stylesheet_directory'); ?>/dist/images/webin.jpg)">
+				<button type="button" data-toggle="modal" data-target="#myModal4" class="work-sample" style="background-image: url(<?php bloginfo('stylesheet_directory'); ?>/dist/images/webin.jpg)">
 					<div class="work-sample--overlay">
 						<h4 class="work-sample--title">Webin</h4>
 					</div>
@@ -233,8 +232,7 @@
 
 				      </div>
 				      <div class="modal-footer">
-				        <a href="https://github.com/henrikra/gym-diary" target="_blank" type="button" class="button-ghost button-sm modal-button">GitHub repo</a>
-				        <a href="http://ec2-54-93-74-64.eu-central-1.compute.amazonaws.com/#/" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
+				        <a href="http://webin.fi" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
 				      </div>
 				    </div>
 				  </div>

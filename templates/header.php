@@ -10,7 +10,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#">
-          <img class="navbar-brand--logo" src="http://raitasola.fi/wordpress/wp-content/uploads/2015/09/henrik-raitasola-logo.png">
+          <img class="navbar-brand--logo" src="<?php bloginfo('stylesheet_directory'); ?>/dist/images/raitasola-logo.png">
         </a>
       </div>
 
