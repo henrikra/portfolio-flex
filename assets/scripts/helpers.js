@@ -38,6 +38,10 @@
     },
     // transform navbar on certain breakpoint
     resizeNavbar: function() {
+      if (this.isMobile()) {
+        $('.navbar').removeClass('is-small');
+        return;
+      }
       var distanceFromTop = $(window).scrollTop();
       var shrinkOn = 100;
       var navbar = $('.navbar');

@@ -19,17 +19,11 @@
     'common': {
       init: function() {
         $(window).scroll(function() {
-          if (!h.isMobile()) {
-            h.resizeNavbar();
-          }
+          h.resizeNavbar();
         });
 
         $(window).resize(function() {
-          if (h.isMobile()) {
-            $('.navbar').removeClass('is-small');
-          } else {
-            h.resizeNavbar();
-          }
+          h.resizeNavbar();
         });
 
         $('a[href^="#"]').click(function(event) {
