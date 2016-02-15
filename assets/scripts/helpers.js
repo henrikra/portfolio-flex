@@ -38,7 +38,7 @@
     },
     // transform navbar on certain breakpoint
     resizeNavbar: function() {
-      if (this.isMobile()) {
+      if (helpers.isMobile()) {
         $('.navbar').removeClass('is-small');
         return;
       }
