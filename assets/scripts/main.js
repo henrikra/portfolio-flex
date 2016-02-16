@@ -18,9 +18,9 @@
     // All pages
     'common': {
       init: function() {
-        $(window).scroll(h.resizeNavbar);
+        $(window).scroll(h.resizeNavbar.bind(h));
 
-        $(window).resize(h.resizeNavbar);
+        $(window).resize(h.resizeNavbar.bind(h));
 
         $('a[href^="#"]').click(function(event) {
           event.preventDefault();
