@@ -76,8 +76,8 @@
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
 						<h4 class="timeline--event-heading">Web devaajaksi Hellewiin!</h4>
-						<p class="timeline--event-description">Mäntsälä hiiohoi! Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
-						<p class="timeline--event-description">Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+						<p class="timeline--event-description">Mäntsälä mielessäin! Hellewillä työaikani on mennyt noin 70% front-endiin ja 30% back-endiin. Pääteknologioina: AngularJS, Jade, Stylus, CoffeeScript.</p>
+						<p class="timeline--event-description">Olen ollut mukana kahdessa projektissa: vapaaehtoistyöyhdistysten ERP ja massiivinen kurssien haku- ja ilmoittautumisjärjestelmä.</p>
 					</div>
 					<time class="timeline--event-date">Toukokuu 2015</time>
 				</div>
@@ -90,7 +90,7 @@
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
 						<h4 class="timeline--event-heading">Eka IT-työ Empowerilla</h4>
-						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+						<p class="timeline--event-description">Työpäivä koostui Empowerilla lähinnä isojen asiakastilauksiin liittyvien tietokantojen ylläpidosta.</p>
 					</div>
 					<time class="timeline--event-date">Kesäkuu 2014</time>
 				</div>
@@ -103,7 +103,7 @@
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
 						<h4 class="timeline--event-heading">Aloitin koodaamisen &lt;3</h4>
-						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+						<p class="timeline--event-description">Urani koodarina alkoi kun menin opiskelemaan Metropoliaan tietotekniikan insinööriksi. Koulusta sain hyvän alkubuustin koodaamiseen, vaikkakin suurin osa web-kehittäjän taidoistani olen oppinut koulun ulkopuolella.</p>
 					</div>
 					<time class="timeline--event-date">Syyskuu 2012</time>
 				</div>
@@ -116,7 +116,7 @@
 				<div class="timeline--event-content is-hidden">
 					<div class="timeline--event-content-container">
 						<h4 class="timeline--event-heading">Synnyin tähän maailmaan!</h4>
-						<p class="timeline--event-description">Lobortis occaecat. Accumsan exercitation.Pariatur aliquam accumsan. Vestibulum orci sociis. Irure lobortis felis conubia. Integer ridiculus parturient ex. Et cillum ligula.</p>
+						<p class="timeline--event-description">Ensimmäinen kosketukseni maapallolle oli Helsingissä Kätilöopiston sairaalassa ja minulla oli silloin jo IT-silmälasit päässä. No ei oikeesti, mutta se kuulostaa jotenki tosi hienolta.</p>
 					</div>
 					<time class="timeline--event-date">Toukokuu 1992</time>
 				</div>
@@ -143,8 +143,8 @@
 				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
 				      </div>
 				      <div class="modal-body">
-				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
-				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
+				        <p>Kun nörtti aloittaa salilla käynnin niin sittenhän on pakko tehdä omat softat harrastusta varten!</p>
+				        <p>Gym Diary on tarkoitettu korvaamaan perinteinen tulosten kirjoittaminen paperille, niin että voit kirjoittaa tulokset suoraan kännykkään.</p>
 				        <ul class="keywords">
 				        	<li class="keywords--item">React</li>
 				        	<li class="keywords--item">Redux</li>
@@ -171,7 +171,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
+				        <h4 class="modal-title" id="myModalLabel">Reactive Movies</h4>
 				      </div>
 				      <div class="modal-body">
 				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
@@ -199,7 +199,7 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
+				        <h4 class="modal-title" id="myModalLabel">Alpin Fysioterapia</h4>
 				      </div>
 				      <div class="modal-body">
 				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
@@ -224,12 +224,10 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Gym Diary</h4>
+				        <h4 class="modal-title" id="myModalLabel">Webin</h4>
 				      </div>
 				      <div class="modal-body">
-				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
-				        <p>Anim iaculis irure dolor. Donec et viverra. Nascetur purus minim curabitur. Sint himenaeos fames. Ea exercitation tortor mus. Excepteur adipiscing lacus. Quisque nisl. Etiam proident.</p>
-
+				        <p>Webin on minun ja ystäväni Aleksin sivuprojekti, jossa teemme pienyrityksille WordPress kotisivuja. Työnjaossa Aleksi suunnittelee sivun graafisen puolen ja sitten hän toimittaa minulle Photoshop PSD-tiedoston. Tästä tiedostosta minä taitan uniikin ja ylläpidettävän WordPress-teeman.</p>
 				      </div>
 				      <div class="modal-footer">
 				        <a href="http://webin.fi" target="_blank" type="button" class="button button-sm modal-button">Käy sivulla</a>
