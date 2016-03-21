@@ -20,16 +20,13 @@
     },
     // check if all events are visible
     isAllEventsVisible: function(events) {
-      var visibleCounter = 0;
+      var eventsVisible = 0;
       events.each(function() {
         if ($(this).find('.timeline--event-content').hasClass('is-visible')) {
-          visibleCounter++;
+          eventsVisible++;
         }
       });
-      if (visibleCounter === events.length) {
-        return true;
-      }
-      return false;
+      return eventsVisible === events.length;
     },
     // check if user is on mobile phone
     isMobile: function() {
@@ -61,6 +58,6 @@
       }, 1000);
     }
 	};
-  
+
 	window.helpers = helpers;
 })(jQuery);
